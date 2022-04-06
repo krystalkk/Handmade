@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <title>Pick your pet</title>
+
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
+    <meta
+      name="description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Hello World!" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
+    <meta
+      property="og:description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
+    />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+
+
+
+    </head>
+
+    <body>
+      <div class="back">
+        
+      </div>
+      
+      <div class="content">
+        <h1>
+          Welcom to Pet Graden
+        </h1>
+
+        <br>
+        <p>
+          Hi,welcome to the pet graden. We are a big lovely family. <br>Adoption is available here. <br>We have many cute animals for you to adopt. <br><br>
+          Reminder: If you decided to adopt, please do not abandon them. <br>Please follow the guidlines of how to raise pet. Responsibilites are important. 
+          <br>
+          <br>
+            
+      <button onclick="window.location.href='page1.html'">Pick Your Pets</button>
+      </div>
+
+      <div class="hearts">
+        <img src="https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/58/000000/external-heart-valentines-day-vitaliy-gorbachev-flat-vitaly-gorbachev.png">
+        <img src="https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/58/000000/external-heart-valentines-day-vitaliy-gorbachev-flat-vitaly-gorbachev.png">
+        <img src="https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/58/000000/external-heart-valentines-day-vitaliy-gorbachev-flat-vitaly-gorbachev.png">
+        <img src="https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/58/000000/external-heart-valentines-day-vitaliy-gorbachev-flat-vitaly-gorbachev.png">
+        <img src="https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/58/000000/external-heart-valentines-day-vitaliy-gorbachev-flat-vitaly-gorbachev.png">
+        <img src="https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/58/000000/external-heart-valentines-day-vitaliy-gorbachev-flat-vitaly-gorbachev.png">
+        <img src="https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/58/000000/external-heart-valentines-day-vitaliy-gorbachev-flat-vitaly-gorbachev.png">
+
+
+
+
+
+
+
+      </div>
+
+    
+
+
+
+    </body>
+
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+      font family: sans-serif;
+    }
+
+    .back{
+      width: 100%;
+      height: 100vh;
+      background-image: url(images/background.png);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    button{
+      color:hotpink;
+      backround: transparent;
+      padding: 10px 25px;
+      border: 1px soid #fff;
+      border-radius: 20px;
+      outline: none;
+      cursor: pointer;
+      bottom: 40px;
+
+    }
+
+    .content{
+      color:black;
+      position: absolute;
+      top: 30%;
+      left: 28%;
+      transform: translateY(-50%);
+      z-index: 2;
+    }
+    h1{
+      font-size: 60px
+
+    }
+    p{
+      
+
+      font-size: 30px;
+    }
+  .hearts img{
+    width: 50px;
+    animation: hearts 7s linear infinite;
+  }
+
+  .hearts{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+  }
+
+  @keyframes hearts{
+    0%{
+      transform: translateY(0);
+      opacity: 0;
+    }
+    50%{
+      
+      opacity: 1;
+    }
+     70%{
+      
+      opacity: 1;
+    }
+     100%{
+      transform: translateY(-80vh);
+      opacity: 0;
+    }
+
+    
+  }
+
+ .hearts img:nth-child(1){
+  animation-delay: 2s;
+ }
+ .hearts img:nth-child(2){
+  animation-delay: 1s;
+ }
+ .hearts img:nth-child(3){
+  animation-delay: 3s;
+ }
+ .hearts img:nth-child(4){
+  animation-delay: 4s;
+ }
+ .hearts img:nth-child(5){
+  animation-delay: 3s;
+ }
+ .hearts img:nth-child(6){
+  animation-delay: 6s;
+ }
+ .hearts img:nth-child(7){
+  animation-delay: 7s;
+ }
+
+
+
+
+
+  </style>
+
+    </html>
+
+

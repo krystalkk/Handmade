@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <title>Pet Graden1</title>
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
+    <meta
+      name="description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Hello World!" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
+    <meta
+      property="og:description"
+      content="A simple website, built with Glitch. Remix it to get your own."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
+    />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+
+    </head>
+
+    <div class="navbar">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <ul>
+        <li><a href="index2.html">About</a></li>
+        <li><a href="page1.html">All</a></li>
+        <li><a href="Oliva.html">Oliva</a></li>
+        <li><a href="Kelly.html">Kelly</a></li>
+        <li><a href="Luke.html">Luke</a></li>
+      </ul>
+    </div>
+  </body>
+
+<style>
+
+div {
+  /* 页面初始化 清除页面元素原有的内外边距 */
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  /* 背景渐变色 */
+  background: linear-gradient(#99f, #f99);
+}
+body,
+.navbar,
+.navbar ul {
+  /* 三个元素都需要弹性布局 写一块 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  /* 相对定位 */
+  position: relative;
+  padding: 20px;
+  border-radius: 50px;
+  background-color: #fff;
+}
+.navbar input {
+  width: 40px;
+  height: 40px;
+  /* 鼠标移入变小手 */
+  cursor: pointer;
+  /* 不透明度为0 直接变透明 */
+  opacity: 0;
+}
+.navbar span {
+  /* 绝对定位 */
+  position: absolute;
+  left: 25px;
+  /* 现将两条线都放到一起 然后单独设置第二条线的位置 calc方法可以自动计算数值 */
+  top: calc(50% - 10px);
+  width: 30px;
+  height: 4px;
+  border-radius: 15px;
+  background-color: #999;
+  /* 这里在解决一个问题 现在span覆盖着复选框 我们鼠标放到span点不中复选框  写这个属性就能解决这个问题 即便鼠标放到span上点击也能够选中或者未选中复选框*/
+  pointer-events: none;
+  /* 收回来的时候过渡刚好相反 */
+  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out 0.3s;
+}
+/* 因为第二条线在navbar这个元素内的第三个位置 所以这里写3 */
+.navbar span:nth-child(3) {
+  top: calc(50% + 6px);
+}
+.navbar ul {
+  width: 0;
+  /* 溢出隐藏 */
+  overflow: hidden;
+  /* 现在这个盒子是扁的 待会解决这个问题 */
+  /* 这个问题出现的原因是 文字被换行显示了 两个汉字竖着排列了 就撑大盒子了 */
+  /* 这个属性可以让文字就在一行排列 不换行 */
+  white-space: nowrap;
+  transition: all 0.5s;
+}
+.navbar ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+.navbar ul li a {
+  /* 取消下划线 */
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+.navbar ul li a:hover {
+  color: #fb7299;
+}
+/* :checked是当选中的复选框的时候 ~ 是兄弟选择器 查找同一级的ul */
+.navbar input:checked ~ ul {
+  width: 350px;
+}
+.navbar input:checked ~ span:nth-child(2) {
+  top: calc(50% - 2px);
+  transform: rotate(-45deg);
+  background-color: #fb7299;
+  /* 现在速度太快了 加个过渡 */
+  /* 这是先执行top 然后.3s后执行transform */
+  transition: top 0.3s ease-in-out, transform 0.3s ease-in-out 0.3s;
+}
+.navbar input:checked ~ span:nth-child(3) {
+  top: calc(50% - 2px);
+  transform: rotate(45deg);
+  background-color: #fb7299;
+  transition: top 0.3s ease-in-out, transform 0.3s ease-in-out 0.3s;
+}
+
+
+
+
+</style>
+
+
+
+
+
+</html>
+
+
+
