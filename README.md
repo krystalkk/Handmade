@@ -1,0 +1,7 @@
+# Handmade Website
+## Pet Graden
+### by Yue(Krystal)Huang
+
+
+The website that I made is for adopting animals online. I want to create a website to serve for animals to find their family. I want to create a web that is full of love. I love animals, and I want to do something for them. Pets give us love unconditionally, we as humans should do it same. My design concept is adding more characteristics and how to train them for each breed. Also, I want to add some interesting aspects to the web, and I included the name poem. This is my first time coding HTML. I found it very interesting to learn. My initial idea is to build a web for animals. Because my friend is considering adopting a dog recently. That inspired me to do an adoption website for pets. I watched a lot of youtube video's when I code. One of the useful things that I learned when I code is that in style, writing top: 30% is more convenient for me to write margin-top:30px. Also to link to the next web, it is easy to use the "button on click". For example, button onclick="window.location.href='Kelly.html'">See Next Pet. This formate of writing the link helped me a lot. I also have issues with GitHub push. I used a lot of time doing online research and asking classmates and DT to study. The method that was posted on Google Slides does not work for me for some reasons. The problem that I have is the access. I finally figured it out with an IT guy that I found.
+
